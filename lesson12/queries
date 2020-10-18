@@ -1,0 +1,13 @@
+DELETE FROM user WHERE name = 'Томас' OR name = 'Джон';
+DELETE FROM user WHERE name = 'Томас';
+DELETE FROM user WHERE name = 'Томас and surname = 'Смит';
+
+UPDATE user SET name = 'опель' WHERE id = '3';
+UPDATE user SET surname = 'измененов' ORDER BY id ASC LIMIT 3;
+
+SELECT * FROM `news` WHERE category_id = 2 ORDER BY id LIMIT 3;
+SELECT * FROM `news` WHERE name = 'Владислав' or name = 'Елена';
+SELECT COUNT(`status`) FROM `news` WHERE status = 1 OR status = 0;
+
+
+
